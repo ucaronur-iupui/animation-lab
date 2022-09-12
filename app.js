@@ -29,7 +29,7 @@ for(rect of rectangles){
     // mouse click
     rect.addEventListener("click", (event) => {
         resetAnimation(event.target);
-        TweenLite.from(event.target, {rotation: 180, duration: 0.3});
+        TweenLite.from(event.target, {rotation: 180, duration: 0.1});
 
     })
 }
