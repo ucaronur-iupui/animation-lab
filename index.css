@@ -1,0 +1,59 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+#title {
+  font-size: 32px;
+  color: #05225c;
+  margin: 20px;
+}
+
+#divider {
+  background-color: #05225c;
+  height: 200px;
+  width: 100%;
+}
+
+/* Rectangle wrapper */
+.wrapper {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 30px;
+}
+
+.rectangle {
+  width: 100%;
+  height: 200px;
+  background-color: #982b94;
+  margin: 0 20px 30px 20px;
+  flex: 30%;
+  box-shadow: 0 0 0 1px black;
+  cursor: pointer;
+}
+
+
+.selected {
+  animation-name: selectedAnimation;
+  animation-duration: 0.2s;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-in-out;
+}
+
+.deselected {
+  animation-name: selectedAnimation;
+  animation-duration: 0.2s;
+  animation-direction: reverse;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes selectedAnimation {
+  from {
+    background-color: #982b94;
+  }
+  to {
+    background-color: #6e256b;
+    transform: scale(1.02);
+  }
+}
